@@ -4,20 +4,20 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ms-fadaei/typescript-library-starter.git"
+    "url": "git+https://github.com/chaslui/typescript-library-starter.git"
   },
-  "homepage": "https://github.com/ms-fadaei/typescript-library-starter",
+  "homepage": "https://github.com/chaslui/typescript-library-starter",
   "license": "MIT",
   "scripts": {
     "dev": "vite --config ./playground/vite.config.ts",
     "generate": "vite --config ./playground/vite.config.ts build",
     "build": "tsc && unbuild",
-    "lint": "eslint --ext .ts,vue --ignore-path .gitignore .",
+    "lint": "eslint .",
     "test": "vitest --run",
     "test:watch": "vitest --watch",
     "coverage": "vitest run --coverage",
     "prepare": "husky install",
-    "release": "yarn test && npx standard-version && git push --follow-tags && npm publish --access public"
+    "release": "pnpm test && npx standard-version && git push --follow-tags && npm publish --access public"
   },
   "lint-staged": {
     "*.ts": "eslint --fix",
@@ -30,7 +30,7 @@
     "vitest",
     "eslint"
   ],
-  "author": "Mohammad Saleh Fadaei <ms.fadaei1997@gmail.com> (https://twitter.com/ms_fadaei)",
+  "author": "ChasLui <chaslui@outlook.com> (https://twitter.com/chaslui1)",
   "type": "module",
   "sideEffects": false,
   "exports": {
@@ -47,29 +47,29 @@
     "dist"
   ],
   "devDependencies": {
-    "@babel/types": "7.19.0",
-    "@types/node": "17.0.17",
-    "@typescript-eslint/eslint-plugin": "5.38.0",
-    "@typescript-eslint/parser": "5.38.0",
-    "eslint": "8.23.1",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "husky": "7.0.4",
-    "jsdom": "19.0.0",
-    "lint-staged": "12.5.0",
-    "path": "0.12.7",
-    "prettier": "2.7.1",
-    "standard-version": "9.3.2",
-    "typescript": "4.8.3",
-    "unbuild": "0.8.11",
-    "vite": "2.9.12",
-    "vitest": "0.23.4"
+    "@babel/types": "^7.25.7",
+    "@eslint/js": "^9.34.0",
+    "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "jsdom": "^25.0.1",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.6.2",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.9.2",
+    "unbuild": "^3.6.1",
+    "vite": "^7.1.3",
+    "vitest": "^3.2.4"
   },
   "bugs": {
-    "url": "https://github.com/ms-fadaei/typescript-library-starter/issues"
+    "url": "https://github.com/chaslui/typescript-library-starter/issues"
   },
   "directories": {
     "test": "tests"
-  },
-  "dependencies": {}
+  }
 }
