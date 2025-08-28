@@ -5,7 +5,7 @@
 ## Pre-packed
 
 - [Unbuild](https://github.com/unjs/unbuild)
-- [Vite 2](https://github.com/vitejs/vite)
+- [Vite](https://github.com/vitejs/vite)
 - [Typescript](https://github.com/microsoft/TypeScript)
 - [Vitest](https://github.com/vitest-dev/vitest)
 - [ESLint](https://github.com/eslint/eslint)
@@ -64,4 +64,4 @@ yarn release
 
 [MIT License](./LICENSE)
 
-Copyright (c) ChasLui ([@ms-fadaei](https://github.com/ms-fadaei))
+Copyright (c) ChasLui ([@ChasLui](https://github.com/ChasLui))
